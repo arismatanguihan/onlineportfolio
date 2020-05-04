@@ -12,6 +12,14 @@ html {
 }
 
 
+#headerLogo {
+	color: white;
+}
+
+#navText {
+	color: white;
+}
+
 /*Banner CSS*/
 
 #banner {
@@ -30,7 +38,10 @@ html {
 }
   
 #bannerBG {
-	background-image: url("../images/desk2.jpg");
+	background-image:  linear-gradient(
+		rgba(0, 0, 0, 0.3), 
+		rgba(0, 0, 0, 0.3)
+	  ), url("../images/city_bg.webp");
 	/*background-image: linear-gradient(to left, #6b6b6b, #141414);*/
     width: 100%;
     height: 100%;
@@ -38,12 +49,13 @@ html {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    position: relative;
     overflow: hidden;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+	margin: 0 auto;
+	color: #ebebeb;
+	background-blend-mode: darken;
 /*    display: flex;*/
 }
 
@@ -89,10 +101,9 @@ html {
 */
 
 #navbar-nav li:hover{
-	background-color: #707070;
-	/*border: solid 1px white;*/
+	background-color: #003983;
 	border-radius: 5px;
-	color: #000;
+	color: black;
 }
 
 
@@ -148,139 +159,6 @@ hr.line2, hr.line4, hr.line6{
 }
 
 
-/*.skill {
-	list-style: none;
-
-}
-
-.skill li{
-	margin: 20px 0;
-}
-
-.bar {
-	background-color: #003487;
-	display: block;
-	height: 5px;
-	border: 1px solid rgba(0,0,0,0.3);
-	border-radius: 5px;
-	overflow: hidden;
-	box-shadow: 0 0 5px #00dec4
-}
-
-.bar span{
-	height: 5px;
-	float: left;
-	background-image: linear-gradient(to left, #f7ff17, #0affeb);
-}
-
-.bar p {
-	float: center;
-}
-
-.html{
-	width: 90%;
-	animation: html 3s;
-}
-
-.css, .bootstrap{
-	width: 80%;
-	animation: css 3s;
-	animation: bootstrap 3s;
-}
-
-
-
-.java, .javascript, .react, .mysql, .mongodb{
-	width: 60%;
-	animation: java 3s;
-	animation: react 3s;
-	animation: mysql 3s;
-	animation: mongodb 3s;
-	animation: javascript 3s;
-
-}
-
-@keyframes html{
-	0% {
-		width: 0%;
-	}
-	100%{
-		width: 90%;
-	}
-
-}
-
-@keyframes css{
-	0% {
-		width: 0%;
-	}
-	100%{
-		width: 80%;
-	}
-
-}
-
-@keyframes javascript{
-	0% {
-		width: 0%;
-	}
-	100%{
-		width: 60%;
-	}
-
-}
-
-@keyframes java{
-	0% {
-		width: 0%;
-	}
-	100%{
-		width: 60%;
-	}
-
-}
-
-
-
-@keyframes react{
-	0% {
-		width: 0%;
-	}
-	100%{
-		width: 60%;
-	}
-
-}
-
-@keyframes bootstrap{
-	0% {
-		width: 0%;
-	}
-	100%{
-		width: 80%;
-	}
-}
-
-@keyframes mysql{
-	0% {
-		width: 0%;
-	}
-	100%{
-		width: 60%;
-	}
-
-}
-
-@keyframes mongodb{
-	0% {
-		width: 0%;
-	}
-	100%{
-		width: 60%;
-	}
-
-}
-*/
 
 /*Footer CSS*/
 #socialIcon {

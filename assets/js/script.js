@@ -122,6 +122,19 @@ function ModalDisplay() {
             element.setAttribute('data-aos','flip-left');   
             // $('#parent_div1').addClass('bounce');
         });
+        $('#exampleModal9').on('show.bs.modal', function (event) {
+          // Fix Animate.css
+          let element = document.getElementById("parent_div9");
+          element.removeAttribute('data-aos');
+          // $('#parent_div1').removeClass('bounce');
+         });
+
+        $('#exampleModal9').on('hidden.bs.modal', function (e) {
+            // Fix Animate.css
+          let element = document.getElementById("parent_div9");
+            element.setAttribute('data-aos','flip-left');   
+            // $('#parent_div1').addClass('bounce');
+        });
 
 
 }
