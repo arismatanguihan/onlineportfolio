@@ -101,12 +101,12 @@ html {
 */
 
 #navbar-nav li:hover{
-	background-color: #003983;
-	border-radius: 5px;
-	color: black;
+	border-bottom: 3px solid #fff;
 }
 
-
+#navbar-nav li.active{
+	border-bottom: 3px solid #fff;
+}
 
 /*Home CSS*/
 
